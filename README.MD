@@ -22,3 +22,5 @@ Q. Explain K-nearest nighbor algorithm in detail [Click Here](Q6.md)
 ### Unit 2 - 4 marks
 
 Q. State the goals of Machine Learning [Click Here](Q7md)
+
+Q. Write a note on speech Recognition and production recommendations [click here](Q8.md)
