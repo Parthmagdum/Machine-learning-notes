@@ -26,3 +26,5 @@ Q. State the goals of Machine Learning [Click Here](Q7md)
 Q. Write a note on speech Recognition and production recommendations [click here](Q8.md)
 
 Q. Advantages and Disadvantages of machine learning [Click Here](Q9.md)
+
+Q. Write a note on function approximation [Click Here](Q10.md)
