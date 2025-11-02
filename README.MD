@@ -41,3 +41,42 @@ Q. Explain in detail the application of Machine learning [Click Here](Q11.md)
 Q. What is the need for ML? Explain in detail classification of ML [Click Here](Q12.md)
 
 Q. Explain steps to design a learning system [Click Here](Q13.md)
+
+---
+# *UNIT 3*
+### Unit 3 - 4 marks
+---
+Q. Explain bias and variance with example[Click here](Q14.md)
+
+Q. Write a short note on confusion matrix [Click here](Q15.md)
+
+Q. How to treat data in ML [Click here](Q16.md)
+
+Q. What is Data pre-processing? Why do we need it ? [Click here](Q17.md)
+
+Q. Explain performance measures of ML [Click here](Q18.md)
+
+Q. Write a note on bootstrap sampling [Click here](Q19.md)
+
+Q. Difference between bagging and boosting [Click here](Q20.md)
+
+Q. Write a note on bagging aggregatiion [Click here](Q21.md)
+
+---
+### Unit 3 - 8 marks
+---
+
+Q. Explain in detail types of ML [Click here](Q22.md)
+
+Q. what is bias and variance ? Explain in detail [Click here](Q23.md)
+
+Q. What is bias and variance and what is Bias-variance tradeof ? [Click here](Q24.md)
+
+Q. Explain overfitting and underfitting in ML [Click here](Q25,.md)
+
+
+---
+# *UNIT 4*
+---
+
+Q. State and prove baye's theorem with example [Click here](Q26,.md)
