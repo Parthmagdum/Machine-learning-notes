@@ -405,6 +405,9 @@ class SwipeNavigation {
     // Add mouse event listeners for desktop testing
     let isMouseDown = false;
     document.addEventListener('mousedown', (e) => {
+      // Only handle left mouse button
+      if (e.button !== 0) return;
+      
       isMouseDown = true;
       this.touchStartX = e.screenX;
       this.touchStartY = e.screenY;
