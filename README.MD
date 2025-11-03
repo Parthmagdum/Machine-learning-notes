@@ -89,9 +89,20 @@ Q. Difference between permutation and combination  [Click here](Q28.md)
 
 ## Notes website generator
 
-This repository now includes a small static site generator to turn these markdown notes into a browsable website.
+This repository includes a modern static site generator that transforms markdown notes into an interactive, mobile-responsive website with the following features:
 
-Quick start to build the site locally:
+### ✨ Features
+
+- **🎨 Modern Dark UI**: Beautiful dark theme with smooth animations and transitions
+- **📱 Mobile Responsive**: Fully optimized for all device sizes (desktop, tablet, mobile)
+- **🔖 Bookmark System**: Save your favorite questions with persistent localStorage
+- **🔍 Smart Search**: Real-time search across all questions
+- **🏷️ Filter by Unit**: Quick filtering by Unit 1, 2, 3, or 4
+- **📊 Question Cards**: All questions displayed in an organized card layout
+- **⚡ Fast Navigation**: Click any question card to view the answer
+- **💾 Auto-save Bookmarks**: Bookmarks are saved in your browser and persist across sessions
+
+### 🚀 Quick start to build the site locally:
 
 1. (Optional but recommended) create and activate a Python virtual environment:
 
@@ -114,14 +125,31 @@ python3 build.py
 
 The generated site will be written to the `site/` directory. Open `site/index.html` in your browser to view.
 
-Files added:
+Alternatively, start a local server:
 
-- `build.py` — generator script that converts each top-level `.md` into an HTML page and creates `site/index.html`.
-- `templates/base.html` — simple HTML template used for pages.
-- `static/style.css` — basic styling for the notes site.
-- `requirements.txt` — minimal Python dependencies (markdown, pygments).
+```bash
+cd site
+python3 -m http.server 8000
+```
 
-If you want a different layout, front-matter, tags, or search, tell me and I can extend the generator.
+Then open http://localhost:8000 in your browser.
+
+### 📁 Files added:
+
+- `build.py` — Enhanced generator script that converts each `.md` into an HTML page with modern UI
+- `templates/base.html` — Responsive HTML template with bookmark functionality
+- `static/style.css` — Modern dark theme with mobile-responsive design
+- `static/script.js` — JavaScript for bookmarks, search, and filter functionality
+- `requirements.txt` — Python dependencies (markdown, pygments)
+
+### 🎯 How to use the website:
+
+1. **Browse Questions**: All questions are displayed as cards on the main page
+2. **Search**: Use the search bar to find specific questions
+3. **Filter**: Click unit tabs to filter by Unit 1, 2, 3, or 4
+4. **Bookmark**: Click the bookmark icon on any question card or question page
+5. **View Bookmarks**: Click the bookmark button in the header to see all saved questions
+6. **Mobile**: The site automatically adapts to your screen size
 
 ## Deploying on Netlify
 

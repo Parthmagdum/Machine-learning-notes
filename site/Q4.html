@@ -3,39 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q4 - Notes</title>
+  <title>Explain Difference between Artificial Intelligence and Machine learning - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="difference-between-artificial-intelligence-ai-and-machine-learning-ml">Difference Between Artificial Intelligence (AI) and Machine Learning (ML)</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="difference-between-artificial-intelligence-ai-and-machine-learning-ml">Difference Between Artificial Intelligence (AI) and Machine Learning (ML)</h3>
 <p><strong>Definition:</strong><br>
 - <strong>Artificial Intelligence (AI):</strong> AI is a broad field of computer science that focuses on creating machines that can think, learn, and make decisions like humans.<br>
 - <strong>Machine Learning (ML):</strong> ML is a subset of AI that allows systems to learn from data and improve their performance without being explicitly programmed.  </p>
 <hr>
 <h3 id="difference-between-ai-and-ml"><strong>Difference Between AI and ML</strong></h3>
-<p>| <strong>Basis</strong> | <strong>Artificial Intelligence (AI)</strong> | <strong>Machine Learning (ML)</strong> |
-|------------|----------------------------------|----------------------------|
-| <strong>Meaning</strong> | AI is a broad concept that aims to make machines smart and capable of performing human-like tasks. | ML is a subset of AI that focuses on teaching machines to learn from data. |
-| <strong>Objective</strong> | To enable machines to simulate human intelligence and behavior. | To enable machines to learn from data and make predictions. |
-| <strong>Scope</strong> | AI includes ML, Deep Learning, Robotics, and Expert Systems. | ML is a part of AI focused mainly on learning and prediction. |
-| <strong>Data Dependency</strong> | AI can use rules, logic, and data. | ML is completely data-driven — it learns patterns from data. |
-| <strong>Learning Ability</strong> | AI can reason, plan, and make decisions like humans. | ML learns automatically from past data and experience. |
-| <strong>Human Intervention</strong> | AI may need human guidance for setting goals and interpreting results. | ML requires less human input once trained on data. |
-| <strong>Output</strong> | Produces intelligent actions and decisions. | Produces predictions or classifications based on patterns. |
-| <strong>Examples</strong> | Chatbots, Self-driving cars, Expert systems, Speech recognition. | Email spam filters, Recommendation systems, Price prediction. |</p>
+<table>
+<thead>
+<tr>
+<th><strong>Basis</strong></th>
+<th><strong>Artificial Intelligence (AI)</strong></th>
+<th><strong>Machine Learning (ML)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Meaning</strong></td>
+<td>AI is a broad concept that aims to make machines smart and capable of performing human-like tasks.</td>
+<td>ML is a subset of AI that focuses on teaching machines to learn from data.</td>
+</tr>
+<tr>
+<td><strong>Objective</strong></td>
+<td>To enable machines to simulate human intelligence and behavior.</td>
+<td>To enable machines to learn from data and make predictions.</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>AI includes ML, Deep Learning, Robotics, and Expert Systems.</td>
+<td>ML is a part of AI focused mainly on learning and prediction.</td>
+</tr>
+<tr>
+<td><strong>Data Dependency</strong></td>
+<td>AI can use rules, logic, and data.</td>
+<td>ML is completely data-driven — it learns patterns from data.</td>
+</tr>
+<tr>
+<td><strong>Learning Ability</strong></td>
+<td>AI can reason, plan, and make decisions like humans.</td>
+<td>ML learns automatically from past data and experience.</td>
+</tr>
+<tr>
+<td><strong>Human Intervention</strong></td>
+<td>AI may need human guidance for setting goals and interpreting results.</td>
+<td>ML requires less human input once trained on data.</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Produces intelligent actions and decisions.</td>
+<td>Produces predictions or classifications based on patterns.</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>Chatbots, Self-driving cars, Expert systems, Speech recognition.</td>
+<td>Email spam filters, Recommendation systems, Price prediction.</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <p>✅ <strong>In short:</strong><br>
 - <strong>AI</strong> → The broader concept of making machines intelligent.<br>
 - <strong>ML</strong> → A part of AI that helps systems learn automatically from data.<br>
-Every ML system is AI, but not every AI system uses ML.</p>
+Every ML system is AI, but not every AI system uses ML.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q4.html" data-title="Explain Difference between Artificial Intelligence and Machine learning" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

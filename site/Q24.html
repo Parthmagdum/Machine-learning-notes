@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q24 - Notes</title>
+  <title>What is bias and variance and what is Bias-variance tradeoff? - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="what-is-bias-and-variance-what-is-bias-variance-tradeoff-8-marks">What is Bias and Variance? What is Bias-Variance Tradeoff? – 8 Marks</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="what-is-bias-and-variance-what-is-bias-variance-tradeoff-8-marks">What is Bias and Variance? What is Bias-Variance Tradeoff? – 8 Marks</h3>
 <hr>
 <h3 id="1-definition-of-bias"><strong>1. Definition of Bias</strong></h3>
 <ul>
@@ -40,11 +61,36 @@ A <strong>deep decision tree</strong> that perfectly fits training data but fail
 </ul>
 <hr>
 <h3 id="4-the-relationship"><strong>4. The Relationship</strong></h3>
-<p>| Model Complexity | Bias | Variance | Total Error |
-|------------------|-------|-----------|--------------|
-| Low Complexity (Simple Model) | High | Low | High |
-| Medium Complexity (Balanced Model) | Moderate | Moderate | <strong>Low (Best)</strong> |
-| High Complexity (Very Complex Model) | Low | High | High |</p>
+<table>
+<thead>
+<tr>
+<th>Model Complexity</th>
+<th>Bias</th>
+<th>Variance</th>
+<th>Total Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low Complexity (Simple Model)</td>
+<td>High</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Medium Complexity (Balanced Model)</td>
+<td>Moderate</td>
+<td>Moderate</td>
+<td><strong>Low (Best)</strong></td>
+</tr>
+<tr>
+<td>High Complexity (Very Complex Model)</td>
+<td>Low</td>
+<td>High</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h3 id="5-graphical-view-conceptually"><strong>5. Graphical View (Conceptually)</strong></h3>
 <p>Imagine a <strong>U-shaped curve</strong> of total error:
@@ -66,10 +112,13 @@ A <strong>deep decision tree</strong> that perfectly fits training data but fail
 <p>✅ <strong>In short:</strong><br>
 - <strong>Bias</strong> → Error due to wrong assumptions (underfitting).<br>
 - <strong>Variance</strong> → Error due to over-sensitivity (overfitting).<br>
-- <strong>Bias-Variance Tradeoff</strong> → Finding the perfect balance where total prediction error is minimum.</p>
+- <strong>Bias-Variance Tradeoff</strong> → Finding the perfect balance where total prediction error is minimum.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q24.html" data-title="What is bias and variance and what is Bias-variance tradeoff?" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

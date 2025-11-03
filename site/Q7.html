@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q7 - Notes</title>
+  <title>State the goals of Machine Learning - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h2 id="goals-of-machine-learning">Goals of Machine Learning</h2>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h2 id="goals-of-machine-learning">Goals of Machine Learning</h2>
 <p>The main goals of Machine Learning (ML) are to make computers learn automatically from data and improve performance without being explicitly programmed.</p>
 <hr>
 <ol>
@@ -33,10 +54,13 @@
 <p>ML algorithms keep improving their accuracy and performance as they are exposed to more data over time.</p>
 <hr>
 <p>✅ In short:
-The goal of ML is to create systems that learn from experience, make predictions, and improve automatically without explicit programming.</p>
+The goal of ML is to create systems that learn from experience, make predictions, and improve automatically without explicit programming.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q7.html" data-title="State the goals of Machine Learning" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

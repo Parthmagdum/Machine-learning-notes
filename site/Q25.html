@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q25 - Notes</title>
+  <title>Explain overfitting and underfitting in ML - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="explain-overfitting-and-underfitting-in-machine-learning-8-marks">Explain Overfitting and Underfitting in Machine Learning – 8 Marks</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="explain-overfitting-and-underfitting-in-machine-learning-8-marks">Explain Overfitting and Underfitting in Machine Learning – 8 Marks</h3>
 <hr>
 <h3 id="1-definition"><strong>1. Definition</strong></h3>
 <p>In Machine Learning, <strong>overfitting</strong> and <strong>underfitting</strong> are two common problems that affect a model’s performance and its ability to <strong>generalize</strong> to new data.</p>
@@ -98,14 +119,47 @@
 </ul>
 <hr>
 <h3 id="4-comparison-table"><strong>4. Comparison Table</strong></h3>
-<p>| <strong>Aspect</strong> | <strong>Overfitting</strong> | <strong>Underfitting</strong> |
-|-------------|------------------|------------------|
-| <strong>Definition</strong> | Learns training data too well (including noise) | Fails to learn from training data |
-| <strong>Error on Training Data</strong> | Very Low | High |
-| <strong>Error on Testing Data</strong> | High | High |
-| <strong>Model Complexity</strong> | Too Complex | Too Simple |
-| <strong>Main Cause</strong> | High Variance | High Bias |
-| <strong>Solution</strong> | Simplify model, regularize | Increase complexity, add features |</p>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>Overfitting</strong></th>
+<th><strong>Underfitting</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Learns training data too well (including noise)</td>
+<td>Fails to learn from training data</td>
+</tr>
+<tr>
+<td><strong>Error on Training Data</strong></td>
+<td>Very Low</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong>Error on Testing Data</strong></td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong>Model Complexity</strong></td>
+<td>Too Complex</td>
+<td>Too Simple</td>
+</tr>
+<tr>
+<td><strong>Main Cause</strong></td>
+<td>High Variance</td>
+<td>High Bias</td>
+</tr>
+<tr>
+<td><strong>Solution</strong></td>
+<td>Simplify model, regularize</td>
+<td>Increase complexity, add features</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h3 id="5-ideal-model"><strong>5. Ideal Model</strong></h3>
 <ul>
@@ -116,10 +170,13 @@
 <p>✅ <strong>In short:</strong><br>
 - <strong>Overfitting</strong> → Model learns noise (high variance, poor generalization).<br>
 - <strong>Underfitting</strong> → Model misses patterns (high bias, poor learning).<br>
-- <strong>Goal:</strong> Find a balance that achieves <strong>low total error</strong> and <strong>good generalization</strong>.</p>
+- <strong>Goal:</strong> Find a balance that achieves <strong>low total error</strong> and <strong>good generalization</strong>.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q25.html" data-title="Explain overfitting and underfitting in ML" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

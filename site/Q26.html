@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q26 - Notes</title>
+  <title>State and prove Bayes theorem with example - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="bayes-theorem-statement-proof-and-example-8-marks"><strong>Bayes’ Theorem – Statement, Proof, and Example (8 Marks)</strong></h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="bayes-theorem-statement-proof-and-example-8-marks"><strong>Bayes’ Theorem – Statement, Proof, and Example (8 Marks)</strong></h3>
 <hr>
 <h3 id="1-definition"><strong>1. Definition</strong></h3>
 <p><strong>Bayes’ Theorem</strong> is a fundamental concept in probability and Machine Learning that helps us <strong>update the probability of a hypothesis</strong> based on new evidence.<br>
@@ -25,12 +46,32 @@ P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}
 ]</p>
 <hr>
 <h3 id="3-meaning-of-terms"><strong>3. Meaning of Terms</strong></h3>
-<p>| Symbol | Meaning |
-|---------|----------|
-| <strong>P(A)</strong> | Prior probability of event A (before seeing evidence) |
-| <strong>P(B|A)</strong> | Likelihood — probability of observing B given A is true |
-| <strong>P(B)</strong> | Total probability of event B (evidence) |
-| <strong>P(A|B)</strong> | Posterior probability — probability of A given that B has occurred |</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P(A)</strong></td>
+<td>Prior probability of event A (before seeing evidence)</td>
+</tr>
+<tr>
+<td>**P(B</td>
+<td>A)**</td>
+</tr>
+<tr>
+<td><strong>P(B)</strong></td>
+<td>Total probability of event B (evidence)</td>
+</tr>
+<tr>
+<td>**P(A</td>
+<td>B)**</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h3 id="4-proof-of-bayes-theorem"><strong>4. Proof of Bayes’ Theorem</strong></h3>
 <p>From the <strong>definition of conditional probability</strong>:</p>
@@ -94,10 +135,13 @@ P(A₁|B) = \frac{(0.01)(0.6)}{0.014} = \frac{0.006}{0.014} = 0.4286
 <p>The probability that the <strong>defective bulb</strong> came from <strong>Factory F1</strong> is approximately <strong>0.4286 (42.86%)</strong>.</p>
 <hr>
 <p>✅ <strong>In short:</strong><br>
-Bayes’ Theorem helps <strong>update probabilities</strong> based on <strong>new evidence</strong> and is widely used in <strong>spam filtering, medical diagnosis, and classification algorithms</strong>.</p>
+Bayes’ Theorem helps <strong>update probabilities</strong> based on <strong>new evidence</strong> and is widely used in <strong>spam filtering, medical diagnosis, and classification algorithms</strong>.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q26.html" data-title="State and prove Bayes theorem with example" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

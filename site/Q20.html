@@ -3,28 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q20 - Notes</title>
+  <title>Difference between bagging and boosting - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="difference-between-bagging-and-aggregation-4-marks">Difference Between Bagging and Aggregation (4 Marks)</h3>
-<p>| <strong>Aspect</strong> | <strong>Bagging (Bootstrap Aggregating)</strong> | <strong>Aggregation</strong> |
-|-------------|-------------------------------------|------------------|
-| <strong>Definition</strong> | Bagging is a Machine Learning ensemble technique that combines results from <strong>multiple models trained on different bootstrap samples</strong> of the data. | Aggregation is the <strong>process of combining the outputs</strong> of multiple models to produce a <strong>final prediction</strong>. |
-| <strong>Data Used</strong> | Uses <strong>bootstrap samples</strong> (sampling with replacement) from the training data. | Uses <strong>predictions from different models</strong> — may or may not use bootstrap samples. |
-| <strong>Purpose</strong> | To <strong>reduce variance</strong> and <strong>prevent overfitting</strong> in high-variance models like decision trees. | To <strong>combine predictions</strong> for improved overall accuracy and stability. |
-| <strong>Example</strong> | Random Forest uses bagging to train many decision trees on different bootstrap samples. | The final voting or averaging step that combines all model outputs is aggregation. |</p>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="difference-between-bagging-and-aggregation-4-marks">Difference Between Bagging and Aggregation (4 Marks)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>Bagging (Bootstrap Aggregating)</strong></th>
+<th><strong>Aggregation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definition</strong></td>
+<td>Bagging is a Machine Learning ensemble technique that combines results from <strong>multiple models trained on different bootstrap samples</strong> of the data.</td>
+<td>Aggregation is the <strong>process of combining the outputs</strong> of multiple models to produce a <strong>final prediction</strong>.</td>
+</tr>
+<tr>
+<td><strong>Data Used</strong></td>
+<td>Uses <strong>bootstrap samples</strong> (sampling with replacement) from the training data.</td>
+<td>Uses <strong>predictions from different models</strong> — may or may not use bootstrap samples.</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>To <strong>reduce variance</strong> and <strong>prevent overfitting</strong> in high-variance models like decision trees.</td>
+<td>To <strong>combine predictions</strong> for improved overall accuracy and stability.</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>Random Forest uses bagging to train many decision trees on different bootstrap samples.</td>
+<td>The final voting or averaging step that combines all model outputs is aggregation.</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <p>✅ <strong>In short:</strong><br>
-Bagging is the <strong>method of training models</strong> on bootstrap samples, while aggregation is the <strong>step of combining their predictions</strong> to form the final result.</p>
+Bagging is the <strong>method of training models</strong> on bootstrap samples, while aggregation is the <strong>step of combining their predictions</strong> to form the final result.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q20.html" data-title="Difference between bagging and boosting" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

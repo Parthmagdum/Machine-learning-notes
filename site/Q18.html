@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q18 - Notes</title>
+  <title>Explain performance measures of ML - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="explain-performance-measures-of-machine-learning-8-marks">Explain Performance Measures of Machine Learning (8 Marks)</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="explain-performance-measures-of-machine-learning-8-marks">Explain Performance Measures of Machine Learning (8 Marks)</h3>
 <p><strong>Definition:</strong><br>
 Performance measures in Machine Learning are <strong>evaluation metrics</strong> used to test how well a trained model performs on unseen data.<br>
 They help to <strong>compare different models</strong> and understand how accurate, precise, or reliable a model’s predictions are.</p>
@@ -64,10 +85,27 @@ They help to <strong>compare different models</strong> and understand how accura
 <li>A <strong>table representation</strong> of prediction results that shows how well a classification model performed.  </li>
 <li>It helps visualize <strong>true vs. predicted</strong> classes.</li>
 </ul>
-<p>| Actual \ Predicted | Positive | Negative |
-|--------------------|-----------|-----------|
-| <strong>Positive</strong> | True Positive (TP) | False Negative (FN) |
-| <strong>Negative</strong> | False Positive (FP) | True Negative (TN) |</p>
+<table>
+<thead>
+<tr>
+<th>Actual \ Predicted</th>
+<th>Positive</th>
+<th>Negative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Positive</strong></td>
+<td>True Positive (TP)</td>
+<td>False Negative (FN)</td>
+</tr>
+<tr>
+<td><strong>Negative</strong></td>
+<td>False Positive (FP)</td>
+<td>True Negative (TN)</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h3 id="6-mean-squared-error-mse"><strong>6. Mean Squared Error (MSE)</strong></h3>
 <ul>
@@ -87,10 +125,13 @@ They help to <strong>compare different models</strong> and understand how accura
 </ul>
 <hr>
 <p>✅ <strong>In short:</strong><br>
-Performance measures help to <strong>evaluate model effectiveness</strong>, <strong>compare algorithms</strong>, and <strong>identify strengths and weaknesses</strong> for both classification and regression problems.</p>
+Performance measures help to <strong>evaluate model effectiveness</strong>, <strong>compare algorithms</strong>, and <strong>identify strengths and weaknesses</strong> for both classification and regression problems.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q18.html" data-title="Explain performance measures of ML" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

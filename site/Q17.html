@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q17 - Notes</title>
+  <title>What is Data pre-processing? Why do we need it? - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="what-is-data-preprocessing-why-do-we-need-it-4-marks">What is Data Preprocessing? Why Do We Need It? (4 Marks)</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="what-is-data-preprocessing-why-do-we-need-it-4-marks">What is Data Preprocessing? Why Do We Need It? (4 Marks)</h3>
 <p><strong>Definition:</strong><br>
 Data preprocessing is the <strong>initial step</strong> in a Machine Learning workflow where <strong>raw data is cleaned, transformed, and prepared</strong> before feeding it to a model.<br>
 It helps convert messy or incomplete data into a <strong>structured and meaningful format</strong> suitable for training.</p>
@@ -51,10 +72,13 @@ It helps convert messy or incomplete data into a <strong>structured and meaningf
 </ol>
 <hr>
 <p>✅ <strong>In short:</strong><br>
-Data preprocessing is <strong>essential to convert raw data into high-quality input</strong>, reducing noise and improving the <strong>accuracy, efficiency, and reliability</strong> of Machine Learning models.</p>
+Data preprocessing is <strong>essential to convert raw data into high-quality input</strong>, reducing noise and improving the <strong>accuracy, efficiency, and reliability</strong> of Machine Learning models.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q17.html" data-title="What is Data pre-processing? Why do we need it?" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

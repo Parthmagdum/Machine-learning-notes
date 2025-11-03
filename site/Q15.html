@@ -3,24 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q15 - Notes</title>
+  <title>Write a short note on confusion matrix - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h3 id="confusion-matrix-4-marks">Confusion Matrix (4 Marks)</h3>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h3 id="confusion-matrix-4-marks">Confusion Matrix (4 Marks)</h3>
 <p><strong>Definition:</strong><br>
 A <strong>Confusion Matrix</strong> is a table used to evaluate the performance of a classification model by comparing <strong>actual</strong> labels with <strong>predicted</strong> labels.</p>
 <hr>
 <h3 id="structure">Structure</h3>
-<p>|                     | <strong>Predicted Positive</strong> | <strong>Predicted Negative</strong> |
-|---------------------|------------------------|------------------------|
-| <strong>Actual Positive</strong> | True Positive (TP)     | False Negative (FN)    |
-| <strong>Actual Negative</strong> | False Positive (FP)    | True Negative (TN)     |</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Predicted Positive</strong></th>
+<th><strong>Predicted Negative</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Actual Positive</strong></td>
+<td>True Positive (TP)</td>
+<td>False Negative (FN)</td>
+</tr>
+<tr>
+<td><strong>Actual Negative</strong></td>
+<td>False Positive (FP)</td>
+<td>True Negative (TN)</td>
+</tr>
+</tbody>
+</table>
 <p>Example (spam detection):</p>
 <p>TP: Spam correctly labeled as spam.</p>
 <p>FP: Regular email wrongly labeled as spam.</p>
@@ -33,10 +71,13 @@ A <strong>Confusion Matrix</strong> is a table used to evaluate the performance 
 <li><strong>True Negative (TN):</strong> Model correctly predicts negative class.  </li>
 <li><strong>False Positive (FP):</strong> Model wrongly predicts positive (Type I Error).  </li>
 <li><strong>False Negative (FN):</strong> Model wrongly predicts negative (Type II Error).  </li>
-</ul>
+</ul><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q15.html" data-title="Write a short note on confusion matrix" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>

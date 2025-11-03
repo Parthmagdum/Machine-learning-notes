@@ -3,16 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Q6 - Notes</title>
+  <title>Explain K-nearest neighbor algorithm in detail - Machine Learning Notes</title>
   <link rel="stylesheet" href="static/style.css" />
-  <meta name="description" content="Notes website generated from markdown files" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap"><h1><a href="index.html">Notes</a></h1></div>
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
   </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
   <main class="wrap content">
-    <h2 id="k-nearest-neighbor-knn-algorithm">K-Nearest Neighbor (KNN) Algorithm –</h2>
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><h2 id="k-nearest-neighbor-knn-algorithm">K-Nearest Neighbor (KNN) Algorithm –</h2>
 <p>Definition:
 K-Nearest Neighbor (KNN) is a supervised machine learning algorithm used for both classification and regression problems.
 It predicts the output for a new data point by looking at the ‘K’ nearest data points in the training dataset and choosing the most common class (for classification) or average value (for regression).</p>
@@ -61,10 +82,13 @@ If K = 3, and among the 3 nearest neighbors,</p>
 <hr>
 <p>✅ In short:
 KNN is a lazy learning algorithm that classifies or predicts based on similarity (distance) between data points.
-It’s simple and effective for small datasets but less efficient for large or high-dimensional data.</p>
+It’s simple and effective for small datasets but less efficient for large or high-dimensional data.</p><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="Q6.html" data-title="Explain K-nearest neighbor algorithm in detail" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
   </main>
+  
   <footer class="wrap site-footer">
-    <p>Generated from repository markdown — open source</p>
+    <p>Machine Learning Notes • Study Material</p>
   </footer>
+  
+  <script src="static/script.js"></script>
 </body>
 </html>
