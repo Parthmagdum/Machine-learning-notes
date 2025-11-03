@@ -267,7 +267,7 @@ class TextToSpeech {
         acceptNode: (node) => {
           // Skip code blocks and script tags
           const parent = node.parentElement;
-          if (parent.tagName === 'CODE' || parent.tagName === 'SCRIPT' || 
+          if (!parent || parent.tagName === 'CODE' || parent.tagName === 'SCRIPT' || 
               parent.tagName === 'STYLE' || parent.closest('pre')) {
             return NodeFilter.FILTER_REJECT;
           }
@@ -277,7 +277,7 @@ class TextToSpeech {
     );
 
     let node;
-    while (node = walker.nextNode()) {
+    while ((node = walker.nextNode()) !== null) {
       const textContent = node.textContent.trim();
       if (textContent) {
         text += textContent + ' ';
@@ -313,7 +313,7 @@ class TextToSpeech {
     const text = this.getTextContent();
 
     if (!text) {
-      alert('No text content found to read');
+      console.warn('No text content found to read');
       return;
     }
 
