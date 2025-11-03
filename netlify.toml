@@ -1,0 +1,8 @@
+[build]
+  # Netlify will use this command to install dependencies and build the static site
+  command = "python3 -m pip install -r requirements.txt && python3 build.py"
+  publish = "site"
+
+[context.production.environment]
+  # speed up pip a bit during the Netlify build
+  PIP_DISABLE_PIP_VERSION_CHECK = "1"

@@ -122,3 +122,34 @@ Files added:
 - `requirements.txt` — minimal Python dependencies (markdown, pygments).
 
 If you want a different layout, front-matter, tags, or search, tell me and I can extend the generator.
+
+## Deploying on Netlify
+
+This project includes a `netlify.toml` so Netlify can build and publish the site automatically.
+
+What Netlify will run (configured in `netlify.toml`):
+
+- Install Python dependencies from `requirements.txt`.
+- Run `python3 build.py` to create the `site/` directory.
+- Publish the `site/` directory as the website.
+
+Quick steps to deploy:
+
+1. Push your repository to GitHub (already done).
+2. In Netlify, choose "New site from Git" and connect your GitHub account.
+3. Select this repository (`PATILYASHH/Machine-learning-notes`).
+4. Netlify will automatically pick up the `netlify.toml` build command and publish directory. If it doesn't, set the build command to:
+
+```text
+python3 -m pip install -r requirements.txt && python3 build.py
+```
+
+and set the publish directory to:
+
+```text
+site
+```
+
+Notes and tips
+- If you prefer not to commit the generated `site/` files to the repo, add `site/` to `.gitignore` and remove the tracked files with `git rm -r --cached site` before pushing — Netlify will still build the site on its side using the `netlify.toml` build command.
+- If your build requires a specific Python version, configure the Python version in the Netlify site UI (Environment > Build image settings) or include any runtime config required by your build environment.
