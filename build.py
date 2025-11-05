@@ -74,6 +74,47 @@ QUESTION_MAP = {
     'j9.md': ('Explain branching statements in Java with example', 'Unit 1', '8 marks', 'JAVA'),
     'j10.md': ('What is type casting? Explain implicit and explicit type casting with example', 'Unit 1', '8 marks', 'JAVA'),
     
+    # Java - Unit 2
+    'j11.md': ('Describe access specifiers in Java', 'Unit 2', '4 marks', 'JAVA'),
+    'j12.md': ('Write short note on static variable and static method in Java', 'Unit 2', '4 marks', 'JAVA'),
+    'j14.md': ('Explain Method Overloading in Java', 'Unit 2', '4 marks', 'JAVA'),
+    'j15.md': ('Write short note on Stack class', 'Unit 2', '4 marks', 'JAVA'),
+    'j16.md': ('Define class and object. Explain with example how to define class and access fields and methods', 'Unit 2', '8 marks', 'JAVA'),
+    'j17.md': ('What is constructor? Explain types of constructor with example', 'Unit 2', '8 marks', 'JAVA'),
+    'j18.md': ('Define a constructor. Explain constructor overloading in Java with example', 'Unit 2', '8 marks', 'JAVA'),
+    'j19.md': ('Define an array. Explain types of array with example', 'Unit 2', '8 marks', 'JAVA'),
+    'j20.md': ('Explain multidimensional array with example', 'Unit 2', '4 marks', 'JAVA'),
+    'j21.md': ('Explain with example ArrayList and LinkedList class in Java', 'Unit 2', '8 marks', 'JAVA'),
+    
+    # Java - Unit 3
+    'j22.md': ('Write short note on super keyword', 'Unit 3', '4 marks', 'JAVA'),
+    'j23.md': ('Write short note on Method Overriding', 'Unit 3', '4 marks', 'JAVA'),
+    'j24.md': ('Write short note on Abstraction in Java', 'Unit 3', '4 marks', 'JAVA'),
+    'j25.md': ('Explain use of final keyword in Java', 'Unit 3', '4 marks', 'JAVA'),
+    'j26.md': ('Difference between this and super keyword', 'Unit 3', '4 marks', 'JAVA'),
+    'j27.md': ('Difference between Method Overloading and Method Overriding', 'Unit 3', '4 marks', 'JAVA'),
+    'j28.md': ('Write short note on Java API package', 'Unit 3', '4 marks', 'JAVA'),
+    'j29.md': ('User-defined package in Java', 'Unit 3', '4 marks', 'JAVA'),
+    'j30.md': ('Define inheritance. Explain multilevel inheritance in Java with example', 'Unit 3', '8 marks', 'JAVA'),
+    'j31.md': ('Define inheritance. Explain single level inheritance in Java with example', 'Unit 3', '8 marks', 'JAVA'),
+    'j32.md': ('Define inheritance. Explain hierarchical inheritance in Java with example', 'Unit 3', '8 marks', 'JAVA'),
+    'j33.md': ('Define interface. Explain how to define and implement interface with example', 'Unit 3', '8 marks', 'JAVA'),
+    'j34.md': ('Explain how to define and use user-defined package with example', 'Unit 3', '8 marks', 'JAVA'),
+    
+    # Java - Unit 4
+    'j35.md': ('Explain in brief multiple catch block with example', 'Unit 4', '4 marks', 'JAVA'),
+    'j36.md': ('Write short note on throws keyword', 'Unit 4', '4 marks', 'JAVA'),
+    'j37.md': ('Write short note on types of exceptions', 'Unit 4', '4 marks', 'JAVA'),
+    'j38.md': ('Explain life cycle of Thread', 'Unit 4', '8 marks', 'JAVA'),
+    'j39.md': ('Explain any four Thread class methods', 'Unit 4', '4 marks', 'JAVA'),
+    'j40.md': ('Explain isAlive() and join() methods in multithreading', 'Unit 4', '4 marks', 'JAVA'),
+    'j41.md': ('Explain in brief Thread Synchronization', 'Unit 4', '4 marks', 'JAVA'),
+    'j42.md': ('Define Exception. Explain try, catch and finally block with example', 'Unit 4', '8 marks', 'JAVA'),
+    'j43.md': ('Explain user-defined exception in detail', 'Unit 4', '8 marks', 'JAVA'),
+    'j44.md': ('Define Thread. How to create a thread by extending Thread class?', 'Unit 4', '8 marks', 'JAVA'),
+    'j45.md': ('Define Thread. How to create a thread by implementing Runnable interface?', 'Unit 4', '8 marks', 'JAVA'),
+    'j46.md': ('Explain concept of Thread Synchronization', 'Unit 4', '4 marks', 'JAVA'),
+    
     # Java
     'java.md': ('Write a short note on features of Java', 'General', '', 'JAVA'),
     
