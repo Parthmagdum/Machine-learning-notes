@@ -190,6 +190,7 @@ class QuestionFilter {
     this.searchInput = document.getElementById('searchInput');
     this.filterTabs = document.querySelectorAll('.filter-tab');
     this.questionCards = document.querySelectorAll('.question-card');
+    this.currentUnit = 'all-units';
     this.init();
   }
 
@@ -200,8 +201,16 @@ class QuestionFilter {
 
     this.filterTabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        this.filterTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+        const filterValue = tab.getAttribute('data-filter');
+        const isUnitTab = tab.closest('.unit-tabs') !== null;
+        
+        if (isUnitTab) {
+          // Update unit filter
+          document.querySelectorAll('.unit-tabs .filter-tab').forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          this.currentUnit = filterValue;
+        }
+        
         this.filterQuestions();
       });
     });
@@ -209,17 +218,15 @@ class QuestionFilter {
 
   filterQuestions() {
     const searchTerm = this.searchInput ? this.searchInput.value.toLowerCase() : '';
-    const activeFilter = document.querySelector('.filter-tab.active');
-    const filterValue = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
 
     this.questionCards.forEach(card => {
       const title = card.querySelector('.question-title').textContent.toLowerCase();
       const unit = card.getAttribute('data-unit');
       
       const matchesSearch = title.includes(searchTerm);
-      const matchesFilter = filterValue === 'all' || unit === filterValue;
+      const matchesUnit = this.currentUnit === 'all-units' || unit === this.currentUnit;
 
-      if (matchesSearch && matchesFilter) {
+      if (matchesSearch && matchesUnit) {
         card.style.display = 'flex';
         // Add animation
         card.style.animation = 'fadeIn 0.3s ease';
