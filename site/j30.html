@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j30 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-define-inheritance-explain-multilevel-inheritance-in-java-with-example-8-marks">Q. Define inheritance. Explain multilevel inheritance in Java with example. (8 Marks)</h3>
+<p><strong>Inheritance</strong> in Java is a mechanism in which one class acquires the properties and methods of another class.<br>
+It supports <strong>code reusability</strong> and <strong>method overriding</strong>, enabling <strong>object-oriented hierarchy</strong>.</p>
+<p>The class that inherits is called <strong>subclass/child class</strong>, and the class being inherited from is called <strong>superclass/parent class</strong>.</p>
+<hr>
+<h3 id="multilevel-inheritance">✅ Multilevel Inheritance</h3>
+<p>Multilevel inheritance occurs when a class inherits from another class, and a third class inherits from that subclass — forming a <strong>chain of inheritance</strong>.</p>
+<p>Grandparent → Parent → Child</p>
+<hr>
+<h3 id="example-of-multilevel-inheritance">✅ Example of Multilevel Inheritance</h3>
+<p>```java
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}</p>
+<p>class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}</p>
+<p>class Puppy extends Dog {
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}</p>
+<p>public class Main {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+        p.eat();    // inherited from Animal
+        p.bark();   // inherited from Dog
+        p.sleep();  // own method
+    }
+}</p>
+<hr>
+<p>✅ Output</p>
+<p>Eating...
+Barking...
+Sleeping...</p>
+<hr>
+<p>Multilevel inheritance allows features to be passed through multiple levels, improving reusability, readability, and code organization.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j30.html" data-title="j30" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

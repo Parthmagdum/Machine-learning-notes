@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j41 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-explain-in-brief-thread-synchronization-4-marks">Q. Explain in brief Thread Synchronization. (4 Marks)</h3>
+<p>Thread synchronization in Java is a technique used to <strong>control the access of multiple threads to shared resources</strong>.<br>
+It prevents <strong>data inconsistency</strong> and ensures that only <strong>one thread at a time</strong> can access critical sections of the code.</p>
+<hr>
+<h3 id="why-synchronization">✅ Why Synchronization?</h3>
+<ul>
+<li>Avoids race conditions</li>
+<li>Maintains data consistency</li>
+<li>Ensures safe thread communication</li>
+</ul>
+<hr>
+<h3 id="how-to-achieve-synchronization">✅ How to Achieve Synchronization</h3>
+<p>Java provides the <code>synchronized</code> keyword to lock a method or code block.</p>
+<hr>
+<h3 id="example">✅ Example</h3>
+<p>```java
+class Counter {
+    int count = 0;</p>
+<div class="codehilite"><pre><span></span><code>synchronized void increment() { // Synchronized method
+    count++;
+}
+</code></pre></div>
+
+<p>}</p>
+<hr>
+<p>✅ Output Meaning</p>
+<p>Even if multiple threads call increment(), only one thread executes it at a time, ensuring correct results.</p>
+<hr>
+<p>Synchronization helps in safe multithreading and avoids conflicts when threads share resources.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j41.html" data-title="j41" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

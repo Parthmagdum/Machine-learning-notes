@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j18 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-define-a-constructor-explain-constructor-overloading-in-java-with-example-8-marks">Q. Define a constructor. Explain constructor overloading in Java with example. (8 Marks)</h3>
+<p>A <strong>constructor</strong> in Java is a special method used to initialize objects.<br>
+It has the <strong>same name as the class</strong>, <strong>no return type</strong>, and is executed automatically when an object is created.</p>
+<hr>
+<h3 id="constructor-overloading">✅ Constructor Overloading</h3>
+<p>Constructor overloading means having <strong>multiple constructors in the same class</strong> with <strong>different parameter lists</strong>.<br>
+It allows objects to be created in multiple ways.</p>
+<hr>
+<h3 id="example-constructor-overloading">✅ Example: Constructor Overloading</h3>
+<p>```java
+class Person {
+    String name;
+    int age;</p>
+<div class="codehilite"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Default</span><span class="w"> </span><span class="n">constructor</span>
+<span class="n">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Unknown&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span><span class="w"> </span><span class="n">Parameterized</span><span class="w"> </span><span class="n">constructor</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="n">parameter</span><span class="p">)</span>
+<span class="n">Person</span><span class="p">(</span><span class="nb nb-Type">String</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span><span class="w"> </span><span class="n">Parameterized</span><span class="w"> </span><span class="n">constructor</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">parameters</span><span class="p">)</span>
+<span class="n">Person</span><span class="p">(</span><span class="nb nb-Type">String</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb nb-Type">void</span><span class="w"> </span><span class="n">display</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="nb nb-Type">void</span><span class="w"> </span><span class="n">main</span><span class="p">(</span><span class="nb nb-Type">String</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Person</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Person</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Rahul&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Person</span><span class="w"> </span><span class="n">p3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Amit&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">p1</span><span class="o">.</span><span class="n">display</span><span class="p">();</span>
+<span class="w">    </span><span class="n">p2</span><span class="o">.</span><span class="n">display</span><span class="p">();</span>
+<span class="w">    </span><span class="n">p3</span><span class="o">.</span><span class="n">display</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>}</p>
+<hr>
+<p>✅ Output</p>
+<p>Unknown 0
+Rahul 0
+Amit 21</p>
+<hr>
+<p>Constructor overloading provides flexibility in creating objects with different initial values.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j18.html" data-title="j18" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

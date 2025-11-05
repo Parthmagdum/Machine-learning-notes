@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j27 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-difference-between-method-overloading-and-method-overriding-4-marks">Q. Difference between Method Overloading and Method Overriding. (4 Marks)</h3>
+<table>
+<thead>
+<tr>
+<th>Method Overloading</th>
+<th>Method Overriding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Same method name, <strong>different parameters</strong></td>
+<td>Same method name, <strong>same parameters</strong></td>
+</tr>
+<tr>
+<td>Occurs <strong>within the same class</strong></td>
+<td>Occurs <strong>between parent and child class</strong> (inheritance)</td>
+</tr>
+<tr>
+<td>Known as <strong>compile-time polymorphism</strong></td>
+<td>Known as <strong>runtime polymorphism</strong></td>
+</tr>
+<tr>
+<td>Return type <strong>may be same or different</strong></td>
+<td>Return type <strong>must be same</strong></td>
+</tr>
+<tr>
+<td>Parameters <strong>must be different</strong> (type/number/order)</td>
+<td>Parameters <strong>must be identical</strong></td>
+</tr>
+<tr>
+<td><code>@Override</code> annotation <strong>not used</strong></td>
+<td><code>@Override</code> annotation often used</td>
+</tr>
+<tr>
+<td>Used to <strong>increase readability &amp; flexibility</strong></td>
+<td>Used to <strong>modify/inherit parent method behavior</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="example-simple">✅ Example (Simple)</h4>
+<p><strong>Overloading</strong>
+```java
+void show(int a) {}
+void show(String b) {}</p>
+<p>Overriding</p>
+<p>class A { void show() {} }
+class B extends A { void show() {} }</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j27.html" data-title="j27" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

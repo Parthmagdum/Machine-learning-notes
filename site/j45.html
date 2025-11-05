@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j45 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-define-thread-how-to-create-a-thread-by-implementing-runnable-interface-8-marks">Q. Define Thread. How to create a thread by implementing Runnable interface? (8 Marks)</h3>
+<p>A <strong>Thread</strong> in Java is a lightweight process used for <strong>concurrent execution</strong> of tasks.<br>
+It allows a program to perform multiple operations <strong>simultaneously</strong>, improving performance and responsiveness.</p>
+<hr>
+<h3 id="creating-a-thread-by-implementing-runnable-interface">✅ Creating a Thread by Implementing <code>Runnable</code> Interface</h3>
+<p>To create a thread using <code>Runnable</code> interface:
+1. Create a class that implements <code>Runnable</code>
+2. Override the <code>run()</code> method (contains task code)
+3. Create a <code>Thread</code> object and pass the <code>Runnable</code> object to it
+4. Call <code>start()</code> method to begin execution</p>
+<hr>
+<h3 id="example">✅ Example</h3>
+<p>```java
+class MyTask implements Runnable {
+    public void run() {
+        System.out.println("Thread is running...");
+    }
+}</p>
+<p>public class Main {
+    public static void main(String[] args) {
+        MyTask task = new MyTask();        // Create Runnable object
+        Thread t = new Thread(task);       // Pass task to Thread
+        t.start();                          // Start thread
+    }
+}</p>
+<hr>
+<p>✅ Output</p>
+<p>Thread is running...</p>
+<hr>
+<p>Using Runnable is preferred when:</p>
+<p>The class needs to extend another class</p>
+<p>You want to separate thread logic from class logic</p>
+<p>This method promotes better design and flexibility in multithreading.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j45.html" data-title="j45" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

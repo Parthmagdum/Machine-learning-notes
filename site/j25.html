@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j25 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-explain-use-of-final-keyword-in-java-4-marks">Q. Explain use of <code>final</code> keyword in Java. (4 Marks)</h3>
+<p>The <code>final</code> keyword in Java is used to <strong>restrict modification</strong>. It can be applied to variables, methods, and classes.</p>
+<hr>
+<h4 id="final-variable">✅ <code>final</code> variable</h4>
+<ul>
+<li>Value cannot be changed once assigned (constant).</li>
+</ul>
+<p><strong>Example:</strong>
+```java
+final int x = 10;
+// x = 20; // Error: cannot change value</p>
+<hr>
+<p>✅ final method</p>
+<p>Cannot be overridden by subclasses.</p>
+<p>Example:</p>
+<p>class A {
+    final void show() {
+        System.out.println("Final method");
+    }
+}</p>
+<hr>
+<p>✅ final class</p>
+<p>Cannot be inherited (no subclass allowed).</p>
+<p>Example:</p>
+<p>final class Test { }
+// class Demo extends Test { } // Error</p>
+<hr>
+<p>The final keyword ensures security, immutability, and controlled behavior in Java programs.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j25.html" data-title="j25" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

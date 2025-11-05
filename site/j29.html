@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>j29 - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-write-short-note-on-java-api-package-4-marks">Q. Write short note on Java API package. (4 Marks)</h3>
+<p>The <strong>Java API (Application Programming Interface)</strong> is a collection of <strong>pre-defined classes, interfaces, and packages</strong> provided by Java to help developers perform common tasks without writing code from scratch. It provides built-in libraries for input/output, collections, networking, database access, and GUI programming.</p>
+<p>Some important Java API packages are:
+- <code>java.lang</code> – Core classes (String, Math, System)
+- <code>java.util</code> – Collections, Scanner, Date classes
+- <code>java.io</code> – File and input/output operations
+- <code>java.net</code> – Networking classes
+- <code>java.awt</code> / <code>javax.swing</code> – GUI components</p>
+<p><strong>Example:</strong>
+```java
+import java.util.Scanner;</p>
+<p>class Demo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter name: ");
+        String name = sc.nextLine();
+        System.out.println("Hello " + name);
+    }
+}</p>
+<p>The Java API improves code reuse, productivity, and development speed by offering ready-made components.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j29.html" data-title="j29" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>
