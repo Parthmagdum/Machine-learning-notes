@@ -62,6 +62,18 @@ QUESTION_MAP = {
     'Q27.md': ('What is probability? What are the rules of probability', 'Unit 4', '8 marks', 'ML'),
     'Q28.md': ('Difference between permutation and combination', 'Unit 4', '4 marks', 'ML'),
     
+    # Java - Unit 1
+    'j1.md': ('Java Question 1', 'Unit 1', '', 'JAVA'),
+    'j2.md': ('Java Question 2', 'Unit 1', '', 'JAVA'),
+    'j3.md': ('Java Question 3', 'Unit 1', '', 'JAVA'),
+    'j4.md': ('Java Question 4', 'Unit 1', '', 'JAVA'),
+    'j5.md': ('Java Question 5', 'Unit 1', '', 'JAVA'),
+    'j6.md': ('Java Question 6', 'Unit 1', '', 'JAVA'),
+    'j7.md': ('Java Question 7', 'Unit 1', '', 'JAVA'),
+    'j8.md': ('Java Question 8', 'Unit 1', '', 'JAVA'),
+    'j9.md': ('Java Question 9', 'Unit 1', '', 'JAVA'),
+    'j10.md': ('Java Question 10', 'Unit 1', '', 'JAVA'),
+    
     # Java
     'java.md': ('Java Questions', 'General', '', 'JAVA'),
     
