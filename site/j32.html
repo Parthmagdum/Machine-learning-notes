@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Define inheritance. Explain hierarchical inheritance in Java with example - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-define-inheritance-explain-hierarchical-inheritance-in-java-with-example-8-marks">Q. Define inheritance. Explain hierarchical inheritance in Java with example. (8 Marks)</h3>
+<p><strong>Inheritance</strong> in Java is a mechanism where one class acquires the properties and methods of another class.<br>
+It supports <strong>code reusability, method overriding, and better class structure</strong> in OOPS.</p>
+<p>The class that inherits is called <strong>subclass (child class)</strong> and the class being inherited from is called <strong>superclass (parent class)</strong>.</p>
+<hr>
+<h3 id="hierarchical-inheritance">✅ Hierarchical Inheritance</h3>
+<p>Hierarchical inheritance occurs when <strong>multiple child classes inherit from a single parent class</strong>.</p>
+<p>Parent
+   /     \</p>
+<p>Child1   Child2</p>
+<hr>
+<h3 id="example-of-hierarchical-inheritance">✅ Example of Hierarchical Inheritance</h3>
+<p>```java
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}</p>
+<p>class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}</p>
+<p>class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat meows");
+    }
+}</p>
+<p>public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.bark();</p>
+<div class="codehilite"><pre><span></span><code>    Cat c = new Cat();
+    c.eat();
+    c.meow();
+}
+</code></pre></div>
+
+<p>}</p>
+<hr>
+<p>✅ Output</p>
+<p>Eating...
+Dog barks
+Eating...
+Cat meows</p>
+<hr>
+<p>Hierarchical inheritance allows shared behavior in parent class and individual behaviors in child classes, improving code reuse and clarity.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j32.html" data-title="Define inheritance. Explain hierarchical inheritance in Java with example" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

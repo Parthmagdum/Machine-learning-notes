@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Write short note on Stack class - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-write-short-note-on-stack-class-4-marks">Q. Write short note on Stack class. (4 Marks)</h3>
+<p>The <code>Stack</code> class in Java is a <strong>LIFO (Last In, First Out)</strong> data structure, meaning the last element inserted is the first one removed. It is part of the <code>java.util</code> package and is used to store and manage data in a stack format.</p>
+<p><strong>Key Methods of Stack:</strong>
+- <code>push()</code> → Adds an element to the stack
+- <code>pop()</code> → Removes and returns the top element
+- <code>peek()</code> → Returns the top element without removing it
+- <code>empty()</code> → Checks if the stack is empty
+- <code>search()</code> → Searches an element and returns its position</p>
+<p><strong>Example:</strong>
+```java
+import java.util.Stack;</p>
+<p>class Demo {
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack&lt;&gt;();
+        s.push(10);
+        s.push(20);
+        System.out.println(s.pop());  // Output: 20
+    }
+}</p>
+<p>The Stack class is useful for expression evaluation, backtracking, recursion, and undo operations.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j15.html" data-title="Write short note on Stack class" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

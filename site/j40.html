@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explain isAlive() and join() methods in multithreading - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-explain-isalive-and-join-methods-in-multithreading-4-marks">Q. Explain <code>isAlive()</code> and <code>join()</code> methods in multithreading. (4 Marks)</h3>
+<p>In Java multithreading, <code>isAlive()</code> and <code>join()</code> are useful methods provided by the <code>Thread</code> class to manage thread execution and synchronization.</p>
+<hr>
+<h4 id="isalive-method">✅ <code>isAlive()</code> Method</h4>
+<ul>
+<li>Used to check whether a thread is <strong>still running</strong> or has finished execution.</li>
+<li>Returns <strong>true</strong> if the thread is active, otherwise <strong>false</strong>.</li>
+</ul>
+<p><strong>Syntax:</strong>
+```java
+t.isAlive();</p>
+<p>Example:</p>
+<p>Thread t = new Thread();
+t.start();
+System.out.println(t.isAlive()); // true (if thread is running)</p>
+<hr>
+<p>✅ join() Method</p>
+<p>Used to pause the execution of the current thread until the specified thread completes.</p>
+<p>Ensures that one thread waits for another to finish.</p>
+<p>Syntax:</p>
+<p>t.join();</p>
+<p>Example:</p>
+<p>class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running...");
+    }
+}</p>
+<p>public class Main {
+    public static void main(String[] args) throws Exception {
+        MyThread t = new MyThread();
+        t.start();
+        t.join(); // Waits for t to finish
+        System.out.println("Main thread continues...");
+    }
+}</p>
+<hr>
+<p>These methods help in thread synchronization and lifecycle management in Java multithreading.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j40.html" data-title="Explain isAlive() and join() methods in multithreading" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>

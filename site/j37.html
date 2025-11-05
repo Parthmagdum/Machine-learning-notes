@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Write short note on types of exceptions - Machine Learning Notes</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-content">
+        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
+        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
+          <i class="fas fa-bookmark"></i>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <div class="bookmark-panel" id="bookmarkPanel">
+    <div class="bookmark-panel-header">
+      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
+      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="bookmark-list" id="bookmarkList">
+      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
+    </div>
+  </div>
+  
+  <main class="wrap content">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Questions</a><button class="tts-btn" id="ttsBtn" title="Read aloud"><i class="fas fa-volume-up"></i> <span>Read Aloud</span></button><div id="answerContent" class="answer-content"><h3 id="q-write-short-note-on-types-of-exceptions-4-marks">Q. Write short note on types of exceptions. (4 Marks)</h3>
+<p>In Java, exceptions are unexpected events that disrupt the normal program flow.<br>
+They are categorized into two main types:</p>
+<hr>
+<h3 id="1-checked-exceptions">✅ 1. <strong>Checked Exceptions</strong></h3>
+<ul>
+<li>Checked at <strong>compile-time</strong></li>
+<li>Must be handled using <code>try-catch</code> or <code>throws</code></li>
+<li>Common for <strong>I/O and database operations</strong></li>
+</ul>
+<p><strong>Example:</strong> <code>IOException</code>, <code>SQLException</code>, <code>ClassNotFoundException</code></p>
+<p>```java
+try {
+    FileInputStream f = new FileInputStream("data.txt");
+} catch (Exception e) {
+    System.out.println(e);
+}</p>
+<hr>
+<p>✅ 2. Unchecked Exceptions</p>
+<p>Checked at runtime</p>
+<p>Occur due to programming errors (logic mistakes, illegal operations)</p>
+<p>Not compulsory to handle</p>
+<p>Example: ArithmeticException, ArrayIndexOutOfBoundsException, NullPointerException</p>
+<p>int a = 10 / 0; // ArithmeticException</p>
+<hr>
+<p>Summary:</p>
+<p>Checked exceptions → compile-time, mandatory handling</p>
+<p>Unchecked exceptions → runtime errors, not mandatory to handle</p>
+<p>These exception types help maintain safe, error-free, and robust programs.</p></div><button class="page-bookmark-btn" id="pageBookmarkBtn" data-slug="j37.html" data-title="Write short note on types of exceptions" title="Bookmark this question"><i class="far fa-bookmark"></i></button>
+  </main>
+  
+  <footer class="wrap site-footer">
+    <p>Machine Learning Notes • Study Material</p>
+  </footer>
+  
+  <script src="static/script.js"></script>
+</body>
+</html>
