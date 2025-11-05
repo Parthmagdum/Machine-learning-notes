@@ -202,13 +202,21 @@ def generate_index(pages):
     for unit_name in sorted(units.keys()):
         for page in units[unit_name]:
             marks_badge = f" • {page['marks']}" if page['marks'] else ""
-            subject_badge = page['subject']
+            subject = page['subject']
+            unit = page['unit']
+            
+            # Avoid duplicate labels when subject and unit are the same
+            if subject == unit:
+                badge_text = subject + marks_badge
+            else:
+                badge_text = f"{subject} • {unit}{marks_badge}"
+            
             cards_html += f'''
             <div class="question-card" data-unit="{page['unit']}" data-subject="{page['subject']}" onclick="window.location.href='{page['slug']}'">
                 <div class="question-number">Q{question_number}</div>
                 <div class="question-title">{page['title']}</div>
                 <div class="question-footer">
-                    <span class="question-unit"><i class="fas fa-tag"></i> {subject_badge} • {page['unit']}{marks_badge}</span>
+                    <span class="question-unit"><i class="fas fa-tag"></i> {badge_text}</span>
                     <button class="bookmark-btn" data-slug="{page['slug']}" data-title="{page['title']}" onclick="event.stopPropagation()">
                         <i class="far fa-bookmark"></i>
                     </button>
