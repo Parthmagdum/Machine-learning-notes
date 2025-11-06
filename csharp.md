@@ -1,8 +1,4 @@
-Alright Yash — here are long, clean, exam-scoring answers for every topic you asked.
-Well-structured. Crisp. Perfect for 6–8 marks.
 
-
----
 
 ✅ 1. Multiple Inheritance (Using Interfaces) – Long Answer
 
@@ -388,13 +384,3 @@ Same libraries usable everywhere
 This flexibility makes .NET a powerful development framework.
 
 
----
-
-✅ If you want, I can convert all these into:
-
-✅ 1-minute revision sheet
-✅ PDF
-✅ Full chapter notes
-✅ 8-mark answer formats
-
-Just say what you want.
