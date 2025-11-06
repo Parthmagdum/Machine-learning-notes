@@ -1,80 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>C# Programming - Study Notes - Machine Learning Notes</title>
-  <link rel="stylesheet" href="static/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <meta name="description" content="Machine Learning Notes - Comprehensive study material" />
-  <meta name="theme-color" content="#0f1724" />
+<meta charset="UTF-8">
+<title>.NET Long Answers</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+        background: #f7f7f7;
+        color: #222;
+        line-height: 1.7;
+    }
+
+    h1, h2 {
+        color: #1a237e;
+    }
+
+    .card {
+        background: #fff;
+        padding: 25px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        border-left: 5px solid #3949ab;
+    }
+
+    code, pre {
+        background: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        display: block;
+        margin: 10px 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+    }
+
+    ul {
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <div class="header-content">
-        <h1><a href="index.html"><i class="fas fa-brain"></i> ML Notes</a></h1>
-        <button class="bookmark-toggle" id="bookmarkToggle" title="View Bookmarks">
-          <i class="fas fa-bookmark"></i>
-          <span class="bookmark-count" id="bookmarkCount">0</span>
-        </button>
-      </div>
-    </div>
-  </header>
-  
-  <div class="bookmark-panel" id="bookmarkPanel">
-    <div class="bookmark-panel-header">
-      <h2><i class="fas fa-bookmark"></i> Bookmarks</h2>
-      <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="bookmark-list" id="bookmarkList">
-      <p class="empty-bookmarks">No bookmarks yet. Click the bookmark icon on any question to save it.</p>
-    </div>
-  </div>
-  
-  <main class="wrap content">
-    
-        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Subjects</a>
-        <div class="hero-section">
-            <h1><i class="fas fa-code"></i> C# Programming</h1>
-            <p style="color: var(--muted); font-size: 1.1rem; margin-bottom: 0;">1 questions available</p>
-        </div>
-        
-        <div class="search-container">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" id="searchInput" class="search-input" placeholder="Search questions...">
-        </div>
-        
-        <div class="filter-section">
-            <div class="filter-label">Filter by Unit:</div>
-            <div class="filter-tabs unit-tabs">
-                <button class="filter-tab active" data-filter="all-units">All Units</button>
-                <button class="filter-tab" data-filter="Unit 1"><i class="fas fa-book"></i> Unit 1</button>
-                <button class="filter-tab" data-filter="Unit 2"><i class="fas fa-book"></i> Unit 2</button>
-                <button class="filter-tab" data-filter="Unit 3"><i class="fas fa-book"></i> Unit 3</button>
-                <button class="filter-tab" data-filter="Unit 4"><i class="fas fa-book"></i> Unit 4</button>
-            </div>
-        </div>
-        
-        <div class="questions-grid">
-                <div class="question-card" data-unit="General" data-subject="C#" onclick="window.location.href='csharp.html'">
-                    <div class="question-number">Q1</div>
-                    <div class="question-title">C# Questions</div>
-                    <div class="question-footer">
-                        <span class="question-unit"><i class="fas fa-tag"></i> General</span>
-                        <button class="bookmark-btn" data-slug="csharp.html" data-title="C# Questions" onclick="event.stopPropagation()">
-                            <i class="far fa-bookmark"></i>
-                        </button>
-                    </div>
-                </div>
-                </div>
-        
-  </main>
-  
-  <footer class="wrap site-footer">
-    <p>Machine Learning Notes • Study Material</p>
-  </footer>
-  
-  <script src="static/script.js"></script>
+
+<h1>.NET Long Answers – Full Notes</h1>
+
+
+<!-- 1 -->
+<div class="card">
+    <div class="title">✅ 1. Multiple Inheritance (Using Interfaces) – Long Answer</div>
+    <p>
+        Multiple inheritance means a class can inherit features from more than one parent.
+        C# does not allow multiple inheritance using classes because it creates ambiguity 
+        (known as the diamond problem). However, C# supports multiple inheritance using 
+        <b>interfaces</b>, where a class can implement multiple interfaces.
+    </p>
+
+    <p>An interface contains only method declarations. A class implementing the interface must define all methods.</p>
+
+<pre>
+interface A {
+    void add();
+}
+
+interface B {
+    void sub();
+}
+
+class C : A, B {
+    public void add() {
+        int a = 10, b = 20, c = a + b;
+        Console.WriteLine("addition " + c);
+    }
+
+    public void sub() {
+        int a = 10, b = 20, c = a - b;
+        Console.WriteLine("sub " + c);
+    }
+}
+</pre>
+
+    <ul>
+        <li>Allows sharing behavior from multiple parent types.</li>
+        <li>Avoids ambiguity.</li>
+        <li>Supports abstraction and flexibility.</li>
+    </ul>
+</div>
+
+
+<!-- 2 -->
+<div class="card">
+    <div class="title">✅ 2. Base Class Library (BCL) – Long Answer</div>
+    <p>
+        The Base Class Library (BCL) is a core part of the .NET Framework. 
+        It is a collection of pre-built, reusable classes that simplify software development.
+    </p>
+
+    <p>BCL includes classes for:</p>
+    <ul>
+        <li>Input/output operations (System.IO)</li>
+        <li>Data types (System)</li>
+        <li>Collections (System.Collections)</li>
+        <li>Networking (System.Net)</li>
+        <li>File handling</li>
+        <li>Database operations</li>
+        <li>Math & threading</li>
+    </ul>
+
+    <p><b>Importance:</b></p>
+    <ul>
+        <li>Reduces development time.</li>
+        <li>Ensures consistency across applications.</li>
+        <li>Works with all .NET languages.</li>
+    </ul>
+
+    <p>BCL is the foundation layer of .NET applications.</p>
+</div>
+
+
+<!-- 3 -->
+<div class="card">
+    <div class="title">✅ 3. Common Language Specification (CLS) – Long Answer</div>
+    <p>
+        The CLS is a set of rules that all .NET languages must follow to ensure cross-language compatibility.
+        Since .NET supports many languages (C#, VB.NET, F#, etc.), CLS makes them work together smoothly.
+    </p>
+
+    <p><b>CLS defines rules for:</b></p>
+    <ul>
+        <li>Naming conventions</li>
+        <li>Data types</li>
+        <li>Method signatures</li>
+        <li>Visibility rules</li>
+    </ul>
+
+    <p><b>Importance:</b></p>
+    <ul>
+        <li>Promotes language interoperability.</li>
+        <li>Ensures cross-language compatibility.</li>
+    </ul>
+</div>
+
+
+<!-- 4 -->
+<div class="card">
+    <div class="title">✅ 4. Common Type System (CTS) – Long Answer</div>
+    <p>The CTS defines all data types supported by .NET, how they behave, and how they are used and managed.</p>
+
+    <p><b>Two categories:</b></p>
+    <ul>
+        <li><b>Value Types</b>: int, float, bool</li>
+        <li><b>Reference Types</b>: class, object, string</li>
+    </ul>
+
+    <p><b>Importance of CTS:</b></p>
+    <ul>
+        <li>Ensures consistency across languages.</li>
+        <li>Removes type conflicts.</li>
+        <li>Supports cross-language inheritance.</li>
+    </ul>
+</div>
+
+
+<!-- 5 -->
+<div class="card">
+    <div class="title">✅ 5. CLR (Common Language Runtime) – Long Answer</div>
+
+    <p>The CLR is the execution engine of the .NET Framework.</p>
+
+    <p><b>Core responsibilities:</b></p>
+    <ul>
+        <li>Memory Management</li>
+        <li>Garbage Collection</li>
+        <li>Security Checking</li>
+        <li>JIT Compilation</li>
+        <li>Exception Handling</li>
+        <li>Thread Management</li>
+    </ul>
+
+    <p><b>Execution Process:</b></p>
+    <ol>
+        <li>Code → IL</li>
+        <li>IL → Machine code via JIT</li>
+        <li>CLR executes machine code</li>
+    </ol>
+
+</div>
+
+
+<!-- 6 -->
+<div class="card">
+    <div class="title">✅ 6. JIT (Just-In-Time Compiler) – Long Answer</div>
+
+    <p>The JIT compiler converts IL code into machine code at runtime.</p>
+
+    <p><b>Types of JIT:</b></p>
+    <ul>
+        <li>Pre-JIT</li>
+        <li>Econo-JIT</li>
+        <li>Normal JIT</li>
+    </ul>
+
+    <p><b>Advantages:</b></p>
+    <ul>
+        <li>Faster execution</li>
+        <li>Optimizes runtime performance</li>
+        <li>Adapts to CPU architecture</li>
+    </ul>
+
+</div>
+
+
+<!-- 7 -->
+<div class="card">
+    <div class="title">✅ 7. Garbage Collection – Long Answer</div>
+
+    <p>Garbage Collection (GC) automatically frees unused memory.</p>
+
+    <p><b>Benefits:</b></p>
+    <ul>
+        <li>Prevents memory leaks</li>
+        <li>Removes unused objects</li>
+        <li>Improves stability</li>
+    </ul>
+
+    <p>GC works in generations (0, 1, 2) for efficiency.</p>
+</div>
+
+
+<!-- 8 -->
+<div class="card">
+    <div class="title">✅ 8. Framework Class Library (FCL) – Long Answer</div>
+
+    <p>The FCL is an extended version of the BCL, containing advanced functionality.</p>
+
+    <p><b>Includes:</b></p>
+    <ul>
+        <li>Web libraries</li>
+        <li>ADO.NET (Database)</li>
+        <li>Graphics</li>
+        <li>XML</li>
+        <li>Windows Forms</li>
+        <li>ASP.NET</li>
+    </ul>
+
+    <p>FCL = BCL + advanced libraries.</p>
+</div>
+
+
+<!-- 9 -->
+<div class="card">
+    <div class="title">✅ 9. OS Role in .NET – Long Answer</div>
+
+    <p>The .NET Framework runs on top of the operating system.</p>
+
+    <p><b>OS provides:</b></p>
+    <ul>
+        <li>File handling</li>
+        <li>Memory management</li>
+        <li>Process control</li>
+        <li>Security</li>
+        <li>Hardware access</li>
+    </ul>
+
+</div>
+
+
+<!-- 10 -->
+<div class="card">
+    <div class="title">✅ 10. .NET Application Layer – Long Answer</div>
+
+    <p>This is the top layer of .NET where applications are created.</p>
+
+    <p><b>Examples:</b></p>
+    <ul>
+        <li>Windows Forms</li>
+        <li>ASP.NET</li>
+        <li>Console Applications</li>
+    </ul>
+
+</div>
+
+
+<!-- 11 -->
+<div class="card">
+    <div class="title">✅ 11. Programming Languages in .NET – Long Answer</div>
+
+    <p>.NET supports languages like C#, VB.NET, and F#.</p>
+
+    <p><b>Compilation Process:</b></p>
+    <ol>
+        <li>Source code → IL</li>
+        <li>IL → executed by CLR using JIT</li>
+    </ol>
+
+    <p><b>Advantages:</b></p>
+    <ul>
+        <li>Cross-language support</li>
+        <li>Reusable libraries</li>
+        <li>Multi-language flexibility</li>
+    </ul>
+
+</div>
+
 </body>
 </html>
